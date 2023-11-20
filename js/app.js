@@ -574,23 +574,8 @@
         }).from(chars, {
             opacity: 0,
             yPercent: 70,
-            stagger: .07,
+            stagger: .06,
             ease: "back.out",
-            duration: .5
+            duration: .4
         });
     }));
-    gsap.to(".animatable-image", {
-        scrollTrigger: {
-            trigger: ".animatable-image",
-            start: "top 80%",
-            end: "bottom 60%",
-            toggleActions: "play none none none"
-        },
-        borderRadius: "20px",
-        duration: 1,
-        ease: "power1.inOut"
-    });
-    window["FLS"] = true;
-    isWebp();
-    menuInit();
-})();
